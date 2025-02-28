@@ -7,6 +7,7 @@ class ConfirmDialog extends HTMLElement {
     this.shadowRoot.innerHTML = `
         <style>
           .dialog-overlay {
+            z-index:1;
             position: fixed;
             top: 0;
             left: 0;
@@ -63,5 +64,3 @@ class ConfirmDialog extends HTMLElement {
 }
 
 customElements.define("confirm-dialog", ConfirmDialog);
-
-export default ConfirmDialog;
